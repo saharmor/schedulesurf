@@ -1,0 +1,5 @@
+* Avoid long files. You are encouraged to break long files to smaller files for better readability.
+* Avoid introducing command line argparse unless I explicitly asked. Instead, put mock data as an example 
+* Remove unused code and imports. Commended code is not considered unused.
+* Avoid adding new variables to .env without asking
+* Always use python3 to run files

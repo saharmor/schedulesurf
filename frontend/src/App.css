@@ -1,0 +1,87 @@
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Card animations */
+.MuiPaper-root {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.MuiPaper-root:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Button enhancements */
+.MuiButton-contained {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s ease !important;
+}
+
+.MuiButton-contained:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .App {
+    padding: 16px 0;
+  }
+}
+
+/* Chip enhancements */
+.MuiChip-root {
+  transition: all 0.2s ease !important;
+}
+
+.MuiChip-root:hover {
+  transform: translateY(-2px);
+}
+
+/* Timeline styling */
+.timeline-dot {
+  position: relative;
+}
+
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 20px;
+  height: calc(100% + 20px);
+  width: 2px;
+  background-color: #e0e0e0;
+  z-index: 0;
+}
+
+.timeline-dot:last-child::after {
+  display: none;
+}
+
